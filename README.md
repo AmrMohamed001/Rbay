@@ -1,40 +1,44 @@
-# create-svelte
+# Rbay
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project implements a custom Redis client service using Node.js and the `redis` package. It's designed to work with a Redis database and includes several custom scripts for specific operations.
 
-## Creating a project
+## Project Idea
 
-If you're seeing this, you've probably already done this step. Congrats!
+This Redis client service can be used as the foundation for building a high-performance, scalable backend for various applications. Some potential use cases include:
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+1. Real-time analytics dashboard: Use the custom scripts to track and update view counts, user interactions, or other metrics in real-time.
+2. Distributed locking system: Leverage the unlock script to implement a distributed locking mechanism for coordinating tasks across multiple servers or microservices.
+3. Caching layer: Implement an efficient caching system for your application to reduce database load and improve response times.
+4. Rate limiting service: Use Redis to track and limit API requests or user actions within specified time windows.
+5. Job queue management: Create a robust job queue system for background task processing, using Redis as the storage backend.
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+## UI Designs
 
-> Note: the `@next` is temporary
+In the `root` folder under `app shots`, you can find some screenshots of the application's user interface. Below are some key screenshots:
 
-## Developing
+### Home Page
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+![Home Page]()
 
-```bash
-npm run dev
+### Sign Up Page
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+![Sign Up Page](docs/ui%20designs/6%20sign%20up%20page.png)
 
-## Building
+### Sign In Page
 
-To create a production version of your app:
+![Sign In Page](docs/ui%20designs/5%20sign%20in%20page.png)
 
-```bash
-npm run build
-```
+### Comments Page (Add Comment)
 
-You can preview the production build with `npm run preview`.
+![Comments Page (Add Comment)](<docs/ui%20designs/8%20comments%20page%20(add%20comment).png>)
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Key Features
+
+- **Custom Redis Client**: Tailored Redis client implementation for specific project needs.
+- **Atomic Operations**: Pre-defined Lua scripts for efficient and atomic operations.
+- **Automatic Index Creation**: Indexes are automatically created on connection.
+- **Error Handling**: Built-in error logging for easier debugging.
+- **Environment Configuration**: Flexible setup using environment variables.
+- **View Count Tracking**: Custom script for atomically incrementing and tracking view counts.
+- **Distributed Locking**: Unlock mechanism for implementing distributed locks.
+- **Scalable Architecture**: Designed to support high-performance, scalable applications.
