@@ -18,19 +18,19 @@ In the `root` folder under `app shots`, you can find some screenshots of the app
 
 ### Home Page
 
-![Home Page]()
+![Home Page](https://github.com/AmrMohamed001/Rbay/blob/master/appshots/app1.png)
 
-### Sign Up Page
+### Dashboard Page
 
-![Sign Up Page](docs/ui%20designs/6%20sign%20up%20page.png)
+![Dashboard Page](https://github.com/AmrMohamed001/Rbay/blob/master/appshots/app2.png)
 
-### Sign In Page
+### Create item page
 
-![Sign In Page](docs/ui%20designs/5%20sign%20in%20page.png)
+![Create item Page](https://github.com/AmrMohamed001/Rbay/blob/master/appshots/app3.png)
 
-### Comments Page (Add Comment)
+### Item Page
 
-![Comments Page (Add Comment)](<docs/ui%20designs/8%20comments%20page%20(add%20comment).png>)
+![Item Page](https://github.com/AmrMohamed001/Rbay/blob/master/appshots/app4.png)
 
 ## Key Features
 
